@@ -1,9 +1,9 @@
 run:
-	go build -o pokexcli && ./pokexcli
+	go build -o pokedexcli && ./pokedexcli
 	
 stop:
 	@echo "Stopping backend"
-	@-pkill -SIGTERM -f "./pokexcli"
+	@-pkill -SIGTERM -f "./pokedexcli"
 	@echo "Stopped backend"
 
 restart: stop run
